@@ -8,22 +8,7 @@ import {ShoppingListService} from "./services/shopping-list.service";
 @Component({
     selector: 'shopping-add-item',
     directives:[MATERIAL_DIRECTIVES],
-    template:`
-    <form name="userForm">
-        <div layout-gt-sm="row">
-            <md-input-container class="md-block" flex-gt-sm>
-                <label>Add New Item</label>
-                <input md-input [(value)]="item.name">
-            </md-input-container>
-            <md-input-container class="md-block" flex-gt-sm>
-                <label>Amount</label>
-                <input md-input type="number" step="any" [(value)]="item.amount"/>
-            </md-input-container>
-        </div>
-        <button md-raised-button class="md-accent md-hue-1" (click)="submitList(item)">Add Item</button>
-
-    </form>
-    `
+    templateUrl:'dev/shopping-list/views/add-new-input.html'
 })
 
 export class ShoppingAddItem{

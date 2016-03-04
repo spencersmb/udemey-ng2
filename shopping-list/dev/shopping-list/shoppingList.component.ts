@@ -1,14 +1,13 @@
 import {Component} from "angular2/core";
-import {MATERIAL_DIRECTIVES} from 'ng2-material/all';
-import {ListItems} from "./listModel";
-import {ShoppingAddItem} from "./shopping.addItem.component";
-import {ShoppingListEditComponent} from "./shopping.edit.component";
-import {ShoppingListService} from "./services/shopping-list.service";
+
 
 @Component({
     selector: 'shopping-list',
     templateUrl:'dev/shopping-list/views/list-view.html',
-    directives:[MATERIAL_DIRECTIVES, ShoppingAddItem, ShoppingListEditComponent],
+    directives:[
+        MATERIAL_DIRECTIVES,
+        ShoppingAddItem,
+        ShoppingListEditComponent],
     styleUrls:['src/css/list_item.css'],
     providers:[ShoppingListService],
 })

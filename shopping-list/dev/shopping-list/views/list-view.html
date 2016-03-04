@@ -16,13 +16,17 @@
             </div>
         </md-toolbar>
         <md-content layout-padding>
-
             <md-subheader class="md-no-sticky">Output</md-subheader>
 
-            <md-list-item class="md-2-line" *ngFor="#i = index; #item of listItems" (click)="onSelect(item, i)">
+            <md-list-item
+                class="md-2-line"
+                *ngFor="#i = index; #item of listItems"
+                (click)="onSelect(item, i)">
+
                 <div class="md-list-item-text">
                     <h3>{{item.name}}, ({{item.amount}})</h3>
                 </div>
+
             </md-list-item>
 
             <div *ngIf="isEditing != false">
