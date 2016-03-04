@@ -22,52 +22,34 @@ h1{
   margin-top: 50px;
 }
 
-.app-content{
+.app-content {
 
-  .examples{
-    width:940px;
-    padding:0;
-    background-color:transparent;
+  .examples {
+    width: 940px;
+    padding: 0;
+    background-color: transparent;
   }
 
-  .section1{
-    padding:0 15px;
+  .section1 {
+    padding: 0 15px;
   }
-  .md-toolbar-tools{
-    h3{
-      margin:15px 0;
+  .md-toolbar-tools {
+    h3 {
+      margin: 15px 0;
     }
-    p{
+    p {
       font-size: 14px;
-      margin:0 0 20px 0;
+      margin: 0 0 20px 0;
     }
-    &.no-height{
-      height:auto;
+    &.no-height {
+      height: auto;
       max-height: none;
     }
   }
 }
 
-.setup{
-  border: 1px solid #ccc;
-  background-color: #eee;
-}
-
-.puzzle{
-  border: 1px solid red;
-  background-color: #ffdbd6;
-  &.solved{
-    border: 1px solid green;
-    background-color: #ccffda;
+md-card{
+  md-card-title{
+    display: block;
   }
-}
-
-.name{
-  font-weight: bold;
-}
-.hide{
-  display: none;
-}
-.show{
-  display:block;
 }
